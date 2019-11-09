@@ -1,0 +1,29 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+	<Dialog title="MFA" id="ListDialog" afterClose="onClose">
+		<l:VerticalLayout width="100%">
+			<l:content>
+				<Panel>
+					<FlexBox height="10px" alignItems="Center" justifyContent="Start">
+						<items>
+							<Label text="Verfication code has been sent to your mobile."/>
+							<Label text="Please enter it and select 'Authenticate'"/>
+						</items>
+					</FlexBox>
+				</Panel>
+				<Panel>
+					<FlexBox height="50px" alignItems="End" justifyContent="Center">
+						<items>
+							<Input id="pin" width="10em"/>
+						</items>
+					</FlexBox>
+					<FlexBox height="50px" alignItems="End" justifyContent="Center">
+						<items>
+							<Button width="100%" text="New Code" press="onNewCode"/>
+							<Button width="100%" text="Authenticate" press="onAuthenticate" type="Emphasized"/>
+						</items>
+					</FlexBox>
+				</Panel>
+			</l:content>
+		</l:VerticalLayout>
+	</Dialog>
+</core:FragmentDefinition>

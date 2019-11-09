@@ -1,0 +1,13 @@
+<mvc:View controllerName="com.sap.MFA.controller.Home" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="Payslip App">
+					<content>
+						<PDFViewer id="pdf" height="100%" title="Latest Payslip"></PDFViewer>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
